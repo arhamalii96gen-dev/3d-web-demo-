@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#060606" />
+  <meta name="description" content="VOXEL creates distinctive websites, brand experiences and digital products for ambitious businesses." />
+  <meta property="og:title" content="VOXEL — Digital Experiences" />
+  <meta property="og:description" content="Websites, brand experiences and digital products built to make businesses memorable." />
+  <meta property="og:type" content="website" />
+  <link rel="manifest" href="site.webmanifest" />
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Mono:wght@400;500&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <title>VOXEL — Digital Experiences</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body class="loading">
+  <div class="loader" aria-hidden="true">
+    <div class="loader-inner">
+      <div class="loader-top">
+        <div class="loader-logo">V<span>O</span>XEL</div>
+        <div class="loader-percent"><span id="loaderPercent">0</span>%</div>
+      </div>
+      <div class="loader-track"><div class="loader-bar" id="loaderBar"></div></div>
+    </div>
+  </div>
+
+  <div class="progress" id="progress"></div>
+  <div class="cursor-dot"></div>
+  <div class="cursor-ring"></div>
+  <div class="grain"></div>
+
+  <canvas id="scene" aria-hidden="true"></canvas>
+  <div class="scene-vignette" aria-hidden="true"></div>
+
+  <header id="header">
+    <a href="#home" class="logo magnetic">V<span>O</span>XEL</a>
+    <nav aria-label="Primary navigation">
+      <a href="#work" class="magnetic">Work</a>
+      <a href="#services" class="magnetic">Services</a>
+      <a href="#process" class="magnetic">Process</a>
+      <a href="#contact" class="magnetic">Contact</a>
+    </nav>
+    <a href="#contact" class="header-cta magnetic">Let's Talk</a>
+  </header>
+
+  <main>
+    <section id="home">
+      <div class="container hero-layout">
+        <div class="hero-copy">
+          <div class="eyebrow hero-eyebrow">Independent Digital Studio</div>
+          <h1 class="display hero-title">
+            <span class="hero-line"><span>MAKE IT</span></span>
+            <span class="hero-line"><span class="orange">MATTER.</span></span>
+            <span class="hero-line"><span>MAKE IT MOVE.</span></span>
+          </h1>
+          <p class="hero-description">We design identities, websites and digital experiences that turn ordinary businesses into memorable brands.</p>
+          <div class="hero-actions">
+            <a href="#work" class="btn btn-fill magnetic"><span>See Our Work</span></a>
+            <a href="#contact" class="btn btn-outline magnetic">Start a Project</a>
+          </div>
+        </div>
+        <div class="hero-note"><span class="hero-note-line"></span>Scroll / Explore</div>
+      </div>
+    </section>
+
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee-track">
+        <span class="marquee-item">WEB DESIGN</span><span class="marquee-dot"></span>
+        <span class="marquee-item">BRAND EXPERIENCE</span><span class="marquee-dot"></span>
+        <span class="marquee-item">DIGITAL STRATEGY</span><span class="marquee-dot"></span>
+        <span class="marquee-item">CREATIVE DEVELOPMENT</span><span class="marquee-dot"></span>
+        <span class="marquee-item">WEB DESIGN</span><span class="marquee-dot"></span>
+        <span class="marquee-item">BRAND EXPERIENCE</span><span class="marquee-dot"></span>
+        <span class="marquee-item">DIGITAL STRATEGY</span><span class="marquee-dot"></span>
+        <span class="marquee-item">CREATIVE DEVELOPMENT</span><span class="marquee-dot"></span>
+      </div>
+    </div>
+
+    <section id="proof">
+      <div class="container trust-grid reveal">
+        <div class="trust-copy">
+          <div class="section-meta">Why clients say yes</div>
+          <h2 class="display trust-title">LOOKS GOOD.<br><span class="orange">WORKS HARD.</span></h2>
+        </div>
+        <div class="trust-points">
+          <div class="trust-point"><span class="trust-number">01</span><div><h3>Clear business purpose</h3><p>Every section has a job: explain the offer, build confidence or move the visitor toward action.</p></div></div>
+          <div class="trust-point"><span class="trust-number">02</span><div><h3>Designed around the brand</h3><p>Typography, motion, color and interaction are treated as one system instead of random effects.</p></div></div>
+          <div class="trust-point"><span class="trust-number">03</span><div><h3>Built to be edited</h3><p>Project names, services, contact details and case-study copy are easy to swap for a real client.</p></div></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="work">
+      <div class="container">
+        <div class="section-heading-row reveal">
+          <div>
+            <div class="section-meta">01 / Selected Work</div>
+            <h2 class="display section-heading"><span class="line"><span>OUR</span></span><span class="line"><span class="orange">WORK.</span></span></h2>
+          </div>
+          <div class="heading-side">Concept-led examples for now. Replace them with real client case studies as soon as you have them.</div>
+        </div>
+        <div class="orange-rule reveal"></div>
+
+        <div class="work-grid">
+          <article class="work-card" data-project="NEXUS" data-copy="A future-facing brand experience focused on positioning, interaction and a memorable digital identity.">
+            <div class="work-visual visual-nexus"><div class="work-meta">BRAND / DIGITAL</div><div class="work-number">01</div><div class="nexus-ring"></div></div>
+            <div class="work-info"><div><div class="work-title">NEXUS</div><div class="work-link">View concept ↗</div></div><div class="work-tag">Brand Experience</div></div>
+          </article>
+          <article class="work-card" data-project="ORBIT" data-copy="A digital product direction combining expressive motion, clear hierarchy and a futuristic interface language.">
+            <div class="work-visual visual-orbit"><div class="work-meta">PRODUCT / UI</div><div class="work-number">02</div><div class="orbit-line"></div><div class="orbit-line two"></div><div class="orbit-core"></div></div>
+            <div class="work-info"><div><div class="work-title">ORBIT</div><div class="work-link">View concept ↗</div></div><div class="work-tag">Digital Product</div></div>
+          </article>
+          <article class="work-card" data-project="GRID" data-copy="A structured web system where typography, interaction and visual rhythm work together as one.">
+            <div class="work-visual visual-grid"><div class="work-meta">SYSTEM / WEB</div><div class="work-number">03</div><div class="grid-panel"></div></div>
+            <div class="work-info"><div><div class="work-title">GRID</div><div class="work-link">View concept ↗</div></div><div class="work-tag">Web Experience</div></div>
+          </article>
+          <article class="work-card" data-project="TYPE / 04" data-copy="A typography-led creative direction built to make a simple digital presence feel unmistakably premium.">
+            <div class="work-visual visual-type"><div class="work-meta">ART DIRECTION</div><div class="work-number">04</div><div class="type-word">VX</div></div>
+            <div class="work-info"><div><div class="work-title">TYPE / 04</div><div class="work-link">View concept ↗</div></div><div class="work-tag">Creative Direction</div></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="services">
+      <div class="container services-grid">
+        <div class="services-sticky">
+          <div class="eyebrow">What we do</div>
+          <h2 class="display">BUILD<br><span class="orange">BETTER.</span></h2>
+          <p>One focused team for strategy, design and development — without the bloated agency process.</p>
+        </div>
+        <div class="service-list">
+          <div class="service"><div class="service-index">01</div><div class="service-name">Brand Experience</div><div class="service-arrow">↗</div></div>
+          <div class="service"><div class="service-index">02</div><div class="service-name">Web Design</div><div class="service-arrow">↗</div></div>
+          <div class="service"><div class="service-index">03</div><div class="service-name">Digital Strategy</div><div class="service-arrow">↗</div></div>
+          <div class="service"><div class="service-index">04</div><div class="service-name">Creative Development</div><div class="service-arrow">↗</div></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="philosophy">
+      <div class="container philosophy-inner">
+        <div class="eyebrow">Our philosophy</div>
+        <h2 class="display philosophy-heading">
+          <span class="ph-line"><span>DIGITAL</span></span>
+          <span class="ph-line"><span>SHOULD FEEL</span></span>
+          <span class="ph-line"><span class="alive-word">ALIVE.</span></span>
+        </h2>
+        <div class="philosophy-bottom">
+          <p class="philosophy-copy">Great digital work has rhythm. It reacts. It guides. It creates a feeling before the user even knows why. That's the difference between a website and an experience.</p>
+          <div class="philosophy-mark">VX</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="process">
+      <div class="container">
+        <div class="process-top">
+          <div><div class="section-meta">02 / Process</div><h2 class="display">FROM IDEA<br>TO <span class="orange">IMPACT.</span></h2></div>
+          <div class="process-intro">A simple process designed to keep the work sharp, transparent and moving forward.</div>
+        </div>
+        <div class="process-grid">
+          <div class="process-card"><div class="process-number">01 / DISCOVER</div><div class="process-title">FIND<br>THE WHY.</div><div class="process-text">Understand the business, audience, goals and opportunity hiding underneath the brief.</div></div>
+          <div class="process-card"><div class="process-number">02 / DEFINE</div><div class="process-title">BUILD<br>THE DIRECTION.</div><div class="process-text">Shape the visual language, structure and interaction system before the details take over.</div></div>
+          <div class="process-card"><div class="process-number">03 / DESIGN</div><div class="process-title">MAKE IT<br>MEMORABLE.</div><div class="process-text">Turn the strategy into a distinctive digital experience with purpose behind every detail.</div></div>
+          <div class="process-card"><div class="process-number">04 / DEVELOP</div><div class="process-title">MAKE IT<br>MOVE.</div><div class="process-text">Build the experience cleanly, responsively and with the motion that brings the design to life.</div></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about">
+      <div class="container about-grid reveal">
+        <div>
+          <div class="section-meta">03 / About</div>
+          <h2 class="display about-title">SMALL<br>TEAM.<br><span class="orange">BIG FEEL.</span></h2>
+        </div>
+        <div class="about-copy">
+          <p>VOXEL is positioned as a focused digital studio: close collaboration, sharp design and development without unnecessary layers between the client and the work.</p>
+          <p>This section is deliberately written around a real studio model rather than invented awards, client counts or revenue claims.</p>
+          <div class="about-pills"><span>Strategy</span><span>Design</span><span>Development</span><span>Motion</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="container contact-wrap contact-reveal">
+        <div class="eyebrow">Have a project in mind?</div>
+        <h2 class="display contact-title"><span class="line"><span>LET'S MAKE</span></span><span class="line"><span class="orange">SOMETHING.</span></span></h2>
+        <p class="contact-description">Tell us what you're building, where you're stuck, or simply what you want to make better.</p>
+        <div class="contact-actions"><a href="mailto:hello@voxel.studio" class="btn btn-fill magnetic"><span>Email the Studio</span></a><a href="#home" class="btn btn-outline magnetic">Back to Top</a></div>
+        <div class="email-note">hello@voxel.studio · replace with your real email</div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-brand">V<span>O</span>XEL</div>
+    <div>Digital Experiences</div>
+    <div>© 2026</div>
+  </footer>
+
+  <div class="modal" id="workModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <div class="modal-box">
+      <button class="modal-close" id="modalClose" aria-label="Close">×</button>
+      <div class="eyebrow">Selected concept</div>
+      <h3 class="modal-title" id="modalTitle">NEXUS</h3>
+      <p class="modal-text" id="modalText">Project details.</p>
+    </div>
+  </div>
+
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>
